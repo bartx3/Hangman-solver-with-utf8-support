@@ -129,7 +129,7 @@ public:
 
 vector <letter> letters;
 
-int max (vector <int> V)
+int max (vector <int> & V)
 {
     int m = V[0];
     int s = V.size();
@@ -138,7 +138,7 @@ int max (vector <int> V)
     return m;
 }
 
-int min (vector <int> V)
+int min (vector <int> & V)
 {
     int m = V[0];
     int s = V.size();
@@ -147,7 +147,7 @@ int min (vector <int> V)
     return m;
 }
 
-int min (int *A, int a_size)
+int min (int * & A, int a_size)
 {
     int m = A[0];
     for(int i = 1; i < a_size; i++)
@@ -155,7 +155,7 @@ int min (int *A, int a_size)
     return m;
 }
 
-int max_value_for (vector <int> V)
+int max_value_for (vector <int> & V)
 {
     int s = V.size();
     if (s == 0)
@@ -176,7 +176,7 @@ int max_value_for (vector <int> V)
     }
 }
 
-bool vector_search (vector<string> V, string t)
+bool vector_search (vector<string> & V, string t)
 {
     int j = V.size();
     for (int i = 0; i < j; i++)
@@ -189,7 +189,7 @@ bool vector_search (vector<string> V, string t)
     return false;
 }
 
-int min_value_for (vector <int> V)
+int min_value_for (vector <int> & V)
 {
     int s = V.size();
     if (s == 0)
